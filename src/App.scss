@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+ul {
+    display: block;
+    cursor: pointer;
+    list-style-type: none;
+    margin: 1;
+    padding: 1rem; 
+}
+li {
+    padding: 1rem;
+    border-top: 2px solid #F2F2F2;
+}
+.linkage {
+    color: black;
+}
+.Nav-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 7rem;
+    width: 100%;
+    border: 2px solid red;
+    align-items: center;
+}
+.hero-main {
+    width: 100%;
+    display: block;
+    position: relative;
+    background-attachment: scroll;
+    background-image: url('img/grandma.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo-parent {
+    height: 7rem;
+    width: 50%;
+    border: 2px solid blue;
+}
+.App-logo-main {
+    border: 2px solid blue;
+    max-width: 100%;
+    height: auto;
+}
+.Carousel-pic {
+    max-height: 100%;
+    max-width: 100%;
+}
+.Hero-sub {
+    height: 10rem;
+    width: 100%;
+    border: 2px solid red;
+}
+.Hero-sub-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
