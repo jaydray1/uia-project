@@ -6,7 +6,6 @@ const Contact = _ => {
     return (
         <div>
             <Hamburger></Hamburger>
-            <h1>Contact Form This Ish!</h1>
             <ContactForm></ContactForm>
 
         </div>
