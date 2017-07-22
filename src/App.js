@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {render} from 'react-dom';
 import {Route, Switch} from 'react-router-dom';
 
 import HomeView from './views/HomeView.js';

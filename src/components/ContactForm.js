@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {render} from 'react-dom';
-import Hamburger from '.././components/Hamburger.js';
+import axios from 'axios';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -33,11 +32,24 @@ class ContactForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+        
+        axios.post('/api/contactpost', { 
+            firstName: this.state.firstName
+          , lastName: this.state.lastName
+          , email: this.state.email
+          , volunteer: this.state.volunteer
+          , fundraise: this.state.fundraise
+          , stayInformed: this.state.stayInformed
+          , successStories: this.state.successStories 
+         })
+        
+        .then( (response) => console.log('updated!'))
+        .catch( error => console.log(error));
     }
 
     render() {
         return (
-            <div>
+            <div className="main-contact">
                 <h1>Contact Form ME!</h1>
                 <div id="contact">
                 <div className="form">

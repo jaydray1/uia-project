@@ -58,13 +58,18 @@ li {
     justify-content: space-around;
     width: 100%;
 }
+.main-contact {
+    display: absolute;
+}
 #contact {
-    height: 50%;
+    display: relative;
+    height: 75%;
     width: 50%;
+    margin: 5em 5em 0 5em;
     border: 2px solid red;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     max-width: 300px;
     text-align: center;
     margin: 40px;
