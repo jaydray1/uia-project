@@ -4,18 +4,23 @@ import Hamburger from '.././components/Hamburger.js';
 // import Navdrop from '.././components/Navdrop.js'
 // import Hero from '.././components/Hero.js';
 // import HeroSub from '.././components/Hero_sub.js';
+import Footer from '.././components/Footer.js';
+import HomeCards from '.././components/HomeCards.js';
 
 const HomeView = _ => {
     return (
-        <div>
+        <div className="home-main">
                 
         
         <Hamburger></Hamburger>
          {/* <Hero></Hero>
         <HeroSub></HeroSub>  */}
         <h1>Welcome Home!</h1>
+        
+        <HomeCards></HomeCards>
+        <Footer></Footer>
         </div>
-            
+        
     )
 }
 

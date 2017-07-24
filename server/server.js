@@ -4,7 +4,8 @@ const express = require('express')
     , massive = require('massive')
     , config = require('../config.js')
     , app = express()
-    , saveNames = require('./controller/save_names.js');
+    , saveNames = require('./controller/save_names.js')
+    , getTeam = require('./controller/get_team.js')
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -16,5 +17,7 @@ app.use(express.static(__dirname + "./../build"));
 massive(config.connectionString).then(dbInstance => app.set('db', dbInstance));
 
 app.post('/api/contactpost', saveNames.postContact)
+
+app.get('/api/team', getTeam.getMember)
 
 app.listen(config.port, () => {console.log(`Listening on port ${config.port}`); } );
