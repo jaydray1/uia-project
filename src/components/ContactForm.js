@@ -50,38 +50,42 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="main-contact">
-                <h1>Contact Form ME!</h1>
+                <section className="main-contact">
                 <div id="contact">
-                <div className="form">
+                <div className="form-group form-group-lg">
 
                   <form onSubmit={this.handleSubmit}> 
 
-                    <label>
-                        First Name
+                    <label for="firstname">First Name</label>
                         <input 
                             type="text"
                             className="form-control"
                             name="firstName"
                             value={this.state.firstName} 
                             onChange={this.handleInputChange} />
-                        Last Name
+                    
+                   
 
-                        <input
+                    
+                        <label for="firstname">Last Name</label>
+                            <input
                             type="text"
                             className="form-control"
                             name="lastName"
                             value={this.state.lastName}
                             onChange={this.handleInputChange} />
-                        Email
-
-                        <input 
+                   
+                    
+                    
+                        <label for="firstname">Email</label>
+                            <input 
                             className="form-control"
                             name="email"
                             type="text"
                             value={this.state.email}
                             onChange={this.handleInputChange} />
-
-
+                    
+                   
                         <h4>Subscription Options</h4>
 
                         <div className="checkbox">
@@ -131,11 +135,11 @@ class ContactForm extends Component {
                             Hear Success Stories
                             </label>
                         </div>
-                    </label> 
-                    <input type ="submit" value="Submit" />
+                    <button type ="submit" value="Submit" className="btn-primary btn-large">Send</button>
                 </form> 
                 </div>
                 </div>
+                </section>
             </div>
         );
     }

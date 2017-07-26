@@ -15,7 +15,10 @@
     "react-dom": "^15.6.1",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "react-slick": "^0.14.11",
+    "react-stripe-checkout": "^2.4.0",
+    "stripe": "^4.23.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",

@@ -3,14 +3,22 @@ import Hamburger from '.././components/Hamburger.js';
 import Rob from '../img/robversaw.jpeg';
 import Jm from '../img/bizpic.jpg';
 import Footer from '.././components/Footer.js';
+// import Hero from '.././components/Hero.js';
+import Navbar from '.././components/Navbar.js';
+import team from '../img/meetus.jpeg';
 
 const About = _ => {
     return (
         <div>
             <Hamburger></Hamburger>
+            <Navbar></Navbar>
+            <div>
+                <img src={team} className="hero-image" alt="meet the team" />
+            </div>
+
 <div className="card-wrapper">
         <div className="card">
-            <img src={Rob} alt="Rob Versaw" className="img-card" />
+            <img src={Rob} alt="Rob Versaw" className="img-card" id="rob-pic" />
             <div className="holder">
                 <h1>Rob Versaw</h1>
                 <p className="title">Director</p>

@@ -1,17 +1,28 @@
 import React from 'react';
 import logo from '../img/logo-name.png';
+import {Link} from 'react-router-dom';
 
 const Navbar = _ => {
     return (
         <div className="Nav-main">
           <div class="logo-parent">
-            <img src={logo} className="img fluid" alt="logo" />
+            <img src={logo} alt="logo" />
          </div>
-            <div className="Nav-header"> 
-                <div>Home</div>
-                <div>About</div> 
-                <div>Contact</div>
-                <div>Help Us Help You</div>
+            <div className="nav-header"> 
+                <ul>
+                    <Link className="linkage" to="/">
+                    <li className="link-nav">Home</li>
+                    </Link>
+                    <Link className="linkage" to="/about">
+                    <li className="link-nav">About</li>
+                    </Link>
+                    <Link className="linkage" to="/contact">
+                    <li className="link-nav">Contact</li>
+                    </Link>
+                    <Link className="linkage" to="/donate">
+                    <li className="link-nav">Donate</li>
+                    </Link>
+                </ul>
             </div>
         </div>  
         
