@@ -1,32 +1,27 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import { Link } from "react-router-dom";
 
-class BarberSlider extends Component {
+class CaroBar extends Component {
   render() {
     var settings = {
-      dots: false,
+      dots: true,
       infinite: true,
-      speed: 500,
+      // speed: 800,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 7000,
       arrows: false,
     };
     return (
-      <div className="barber-caro">
+      <div className="quote-caro">
         <Slider {...settings}>
-          <div><h3></h3><img className="barber-img" src={aboutbackground} alt=""/></div>
-          <div><img className="barber-img" src={barber} alt=""/><h3></h3></div>
-          <div><img className="barber-img" src={zionbackground} alt=""/><h3></h3></div>
+          <div><h3>#1</h3></div>
+          <div><h3>#2</h3></div>
+          <div><h3>#3</h3></div>
         </Slider>
-        <Link to="/barbers">
-          <div className="barberButton barberButtonBack"></div>
-          <div className="barberButton">Meet the Barbers</div>
-        </Link>
       </div>
     );
   }
 }
-export default BarberSlider;
+export default CaroBar;
