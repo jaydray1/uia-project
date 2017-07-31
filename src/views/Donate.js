@@ -16,22 +16,22 @@ const Donate = _ => {
             </div>
 
             <div className="Hero-sub">
-                <div className="Hero-sub-sub">
-                <h2>United In</h2>
-                <img src={logo} className="logo-name" alt="logo_with_name" height="100em" />
-                <h2>Aging</h2>
-                </div>
-            </div>
+            <div className="Hero-sub-sub" id="home-hero-sub">
+                <h2>United In Aging</h2>
+                <img src={logo} className="logo-name" alt="logo_with_name" height="70em" />
+                <h2>Donate</h2>
+        </div>
+        </div> 
         
         <div className="donate-main">
             <div class="pay-button">
                 <p>
                     Insert some stuff about donating here:
                 </p>
-                <StripeComp />
             </div>
-            <Footer />
+                <StripeComp />
         </div>
+            <Footer />
         </div>
         );
     }

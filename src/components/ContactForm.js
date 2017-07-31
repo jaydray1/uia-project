@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+// import config from '../../config.js';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -136,6 +137,7 @@ class ContactForm extends Component {
                             </label>
                         </div>
                     <button type ="submit" value="Submit" className="btn-primary btn-large">Send</button>
+                    {/* <div class="g-recaptcha" data-sitekey="config.recaptcha_secret"></div> */}
                 </form> 
                 </div>
                 </div>

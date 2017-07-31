@@ -12,7 +12,7 @@ import logo from '../img/logononame.png';
 const HomeView = _ => {
     return (
         <div className="home-main">
-                
+
         <Hamburger></Hamburger>
         <Navbar></Navbar>
         <div>
@@ -21,9 +21,9 @@ const HomeView = _ => {
 
         <div className="Hero-sub">
             <div className="Hero-sub-sub" id="home-hero-sub">
-                <h2>United In</h2>
+                <h2>United In Aging</h2>
                 <img src={logo} className="logo-name" alt="logo_with_name" height="70em" />
-                <h2>Aging</h2>
+                <h2>Home</h2>
         </div>
         </div> 
         

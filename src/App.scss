@@ -35,6 +35,10 @@ ul {
 }
 .linkage {
     color: black;
+    text-decoration: none;
+}
+.linkage:hover {
+    text-decoration: none;
 }
 .hero-image {
     height: 50%;
@@ -49,10 +53,14 @@ ul {
 }
 .hamburgler {
     display: flex;
-    justify-content: space-between;
+    // flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    margin-left: 2em;
-    margin-right: 2em;
+    // margin-left: 2em;
+    // margin-right: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 90%;
 }
 fa-bars fa-2x {
     color: $dark-gray;
@@ -98,7 +106,7 @@ fa-bars fa-2x {
     align-content: center;
     height: 20rem;
     width: 100%;
-    border: 2px solid red;
+    // border: 2px solid red;
     background: white;
 }
 .Hero-sub-sub {
@@ -108,7 +116,7 @@ fa-bars fa-2x {
     align-items: center;
     width: 100%;
     background: white;
-    border: 2px solid blue;
+    // border: 2px solid blue;
 }
 .main-contact {
     display: flex;
@@ -150,6 +158,7 @@ fa-bars fa-2x {
     flex-direction: column;
     align-items: center;
     margin-top: 3em;
+    // margin-left: 5em;
 }
 .home-cards-main {
     display: flex;
@@ -181,14 +190,44 @@ fa-bars fa-2x {
         width: 100%;
         margin-top: 90px;
     }
+    .slick-slide {
+        margin-bottom: 10em;
+    }
     
 }
+
 @media screen and (min-width: 834px) {
     #home-image {
         clip-path: inset(20px 0px 300px 0px);
-        margin-bottom: -15em;
+        margin-bottom: -21.5em;
     }
+   .Hero-sub {
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    width: 100%;
+    background: white;
 }
+.Hero-sub-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background: white;
+}
+#home-hero-sub {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+}
+
+// @media screen and (min-width: 918px) {
+//     #home-image {
+//         margin-bottom: -21.5em;
+//     }
+// }
 
 @media screen and (min-width: 1000px) {
     .hamburgler {
@@ -211,6 +250,7 @@ fa-bars fa-2x {
     }
     .card-wrapper {
       align-items: baseline;
+      margin-left: 6em;
     }
     .about-about-image {
         position: absolute;
@@ -248,7 +288,7 @@ fa-bars fa-2x {
 @media screen and (min-width: 1200px) {
     #home-image {
         clip-path: inset(20px 0px 550px 0px);
-        margin-bottom: -53em;
+        margin-bottom: -39.3em;
     }
      .main-contact {
          margin-bottom: 3em;
@@ -271,8 +311,8 @@ fa-bars fa-2x {
 }   
 
 @media screen and (min-width: 1318px) {
-    #home-hero-sub {
-        margin-top: 20em;
+    #home-image {
+        margin-bottom: -39.3em;
     }
 }
 @media screen and (min-width: 1320px) {
@@ -321,14 +361,14 @@ a {
     margin: 40px;
 }
 .circle {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
     width: 90px;
     border-radius: 50%;
     border: 2px solid $blue;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     color: $blue;
     transition: background .2s, color .2s;
 }
@@ -338,22 +378,20 @@ a {
     color: white;
     cursor: pointer;
 }
-.welcome {
-    text-align: center;
+.card-content {
+    
 }
 .form-group form-group.large {
     width: 100%;
 }
 .donate-main {
-    height: 450px;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-.pay-button {
-    display: flex;
-
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 7em;
 }
 .icons {
     display: flex;
@@ -365,16 +403,33 @@ a {
 }
 .quote-caro {
     position: relative;
-    align-items: center;
-    align-content: center;
-    background-image: url('./img/rainbowflag.jpg');
+    background-image: url('./img/rainbowflag2.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    font-size: 14px;
+    color: black;
     height: 30em;
-    width: 100%;
+    width: 80%;
+    text-align: center;
     margin-bottom: 5em;
+    margin-left: 10em;
+}
+.slick-slide {
+    margin-bottom: 18em;
+}
+@media screen and (max-width: 799px) {
+    .quote-caro {
+        display: none;
+    }
+}
+h3 {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
 }
 .sponsor-holder {
     display: flex;
@@ -395,4 +450,10 @@ a {
     text-align: center;
     font-size: 24px;
     
+}
+.sponsor-main {
+    display: none;
+}
+h3 {
+    color: black;
 }

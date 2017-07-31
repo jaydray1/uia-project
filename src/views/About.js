@@ -21,21 +21,24 @@ const About = _ => {
                  <img src={team} className="hero-image" id="about-image" alt="meet the team" /> 
             </div>
 
-        <div className="Hero-sub-sub">
-                <div className="Hero-sub-sub">
-                <h2>United In</h2>
-                <img src={logo} className="logo-name" alt="logo_with_name" height="100em" />
-                <h2>Aging</h2>
-                </div>
-            </div>
+        <div className="Hero-sub">
+            <div className="Hero-sub-sub" id="home-hero-sub">
+                <h2>United In Aging</h2>
+                <img src={logo} className="logo-name" alt="logo_with_name" height="70em" />
+                <h2>Meet Us</h2>
+        </div>
+        </div>
 
 <div className="card-wrapper">
-            <div className="about-about-image"><img src={julia} alt="Julia White" className="img-card" /></div>
+
+    <div className="about-about-image"><img src={julia} alt="Julia White" className="img-card" /></div>
         <div className="card">
             <div className="holder">
                 <h1>Julia White</h1>
-                <div className="title">Master of Social Work, University of Pennsylvania 2019</div>
-                <div>Duke University, MBA</div>
+                <div className="title">Managing Director</div>
+                <br />
+                <div>Master of Social Work, University of Pennsylvania 2019</div>
+                <br/>
                 <div>Serving the older population of the greater Philadelphia area 
                 for the past five years while working for the State of New Jersey 
                 and City of Philadelphia, Julia has firsthand experience helping 
@@ -72,7 +75,7 @@ const About = _ => {
         <div className="card">
                 <div className="holder">
                     <h1>Rob Versaw</h1>
-                    <p className="title">Director</p>
+                    <p className="title">Operations</p>
                     <p>Duke University, MBA</p>
                     <p>As an active member of the LGBTQIA community, and having 
                     spent time in parts of the country less welcoming to those from 

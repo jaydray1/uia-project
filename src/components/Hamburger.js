@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navdrop from './Navdrop';
-import LogoNo from '../img/logononame.png';
+// import LogoNo from '../img/logononame.png';
 
 class Hamburger extends Component {
     constructor(props) {
@@ -23,9 +23,10 @@ render() {
     return (
         <div className="hamburgler">
 
-            <div id="logo-stick">
+            
+             {/* <div id="logo-stick">
                 <img src={LogoNo} alt="logo" />
-            </div> 
+            </div>   */}
 
             <div>
             <i className="fa fa-bars fa-2x" 

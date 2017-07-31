@@ -11,6 +11,8 @@ const Footer = _ => {
                     <i className="fa fa-linkedin"></i></a></span>
                     <span id="con"><a href="https://www.facebook.com/unitedaging/">
                     <i className="fa fa-facebook"></i></a></span>
+                    <span id="con"><a href="https://twitter.com/UnitedAging">
+                    <i className="fa fa-twitter"></i></a></span>
                 </div>
             </div>
           
