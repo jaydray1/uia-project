@@ -6,6 +6,7 @@ const express = require('express')
     , app = express()
     , saveNames = require('./controller/save_names.js')
     , getTeam = require('./controller/get_team.js')
+    , getFacts = require('./controller/get_facts.js')
     , stripe = require('stripe')(config.secret_key);
 
 app.use(bodyParser.json());
@@ -20,6 +21,8 @@ massive(config.connectionString).then(dbInstance => app.set('db', dbInstance));
 app.post('/api/contactpost', saveNames.postContact)
 
 app.get('/api/team', getTeam.getMember)
+
+// app.get('/api/facts', getFacts.getFact)
 
 app.post('/api/payment', function(req, res, next){
   //convert amount to pennies

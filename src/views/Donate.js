@@ -25,9 +25,10 @@ const Donate = _ => {
         
         <div className="donate-main">
             <div class="pay-button">
-                <p>
-                    Insert some stuff about donating here:
-                </p>
+                <div className="donate-now">
+                    Donate Now
+                </div>
+                <p className="coming-soon">COMING SOON</p>
             </div>
                 <StripeComp />
         </div>

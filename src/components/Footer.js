@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = _ => {
     return (
         <div>
-    <div className="home-content"></div>
+    <div className="home-content">
             <div className="footer">
                 <p>2017 United in Aging. All Rights Reserved</p>
                 <div className="icons">
@@ -15,7 +15,7 @@ const Footer = _ => {
                     <i className="fa fa-twitter"></i></a></span>
                 </div>
             </div>
-          
+          </div>
         </div>
     )
 }

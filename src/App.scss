@@ -8,6 +8,10 @@ $dark-gray: #222222;
 $gray: #FCFCFC;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:700i');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400i');
 
 body {
     background-color: $gray;
@@ -15,7 +19,6 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 ul {
     display: block;
@@ -24,6 +27,20 @@ ul {
     margin: 1;
     padding: 1rem; 
 }
+h3 {
+    font-weight: bold;
+    font-size: 15px;
+}
+p {
+    font-family: 'PT Serif', serif;
+    font-size: 15px;
+}
+// .umbrella {
+//     width: 100%;
+//     background: no-repeat center center fixed;
+//     background-size: cover;
+//     height: 50em;
+// }
 .link-ham {
     padding: 1rem;
     border-top: 2px solid #F2F2F2;
@@ -137,12 +154,12 @@ fa-bars fa-2x {
 //     position: relative;
 //     margin-top: 9.8em;
 // }
-.card {
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-    max-width: 300px;
-    text-align: center;
-    margin: 40px;
-}
+// .card {
+//     // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+//     max-width: 300px;
+//     text-align: center;
+//     margin: 40px;
+// }
 .footer {
     display: flex;
     justify-content: space-around;
@@ -166,6 +183,7 @@ fa-bars fa-2x {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     
 }
 @media screen and (min-width: 375px) {
@@ -197,6 +215,9 @@ fa-bars fa-2x {
 }
 
 @media screen and (min-width: 834px) {
+    .umbrella {
+        
+    }
     #home-image {
         clip-path: inset(20px 0px 300px 0px);
         margin-bottom: -21.5em;
@@ -240,7 +261,8 @@ fa-bars fa-2x {
         top: 0;
         flex-direction: row;
         justify-content: space-between;
-        background-color: white;
+        background-color: $gray;
+        font-weight: bold;
         height: 11rem;
         width: 100%;
         // border: 2px solid red;
@@ -282,10 +304,11 @@ fa-bars fa-2x {
 
 @media screen and (min-width: 1140px) {
     .home-cards-main {
-        margin-bottom: 225px;
+        margin-bottom: 75px;
     }
 }
 @media screen and (min-width: 1200px) {
+    
     #home-image {
         clip-path: inset(20px 0px 550px 0px);
         margin-bottom: -39.3em;
@@ -326,6 +349,11 @@ fa-bars fa-2x {
         margin-bottom: -26.5em;
     }
 }
+@media screen and (max-width: 1200px) {
+    .quote-caro {
+        display: none;
+    }
+}
 .holder {
     display: flex;
     flex-direction: column;
@@ -355,17 +383,42 @@ a {
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 300px;
-    height: 300px;
+    width: 296px;
+    height: 312px;
     text-align: center;
     margin: 40px;
+    padding-top: 20px;
+    // border: 2px solid red;
+}
+.card-content {
+    // border: 2px solid red;
+    height: 175px;
+    margin-top: 1em;
+    color: #7a7a7a;
+}
+.card-caller {
+    // border: 2px solid red;
+    width: 100%;
+    font-weight: bold;
+}
+.card-box {
+    // border: 2px solid purple;
+    padding: 2em;
+}
+.circle-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid orange;
+    width: 100%;
+    height: 7em;
 }
 .circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     border: 2px solid $blue;
     margin-bottom: 1em;
@@ -373,13 +426,10 @@ a {
     transition: background .2s, color .2s;
 }
 .circle:hover {
-    background-color: $orange;
+    background-color: black;
     border: white;
     color: white;
     cursor: pointer;
-}
-.card-content {
-    
 }
 .form-group form-group.large {
     width: 100%;
@@ -413,11 +463,22 @@ a {
     height: 30em;
     width: 80%;
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
     margin-left: 10em;
+    font-family: 'PT Serif', serif; 
 }
 .slick-slide {
     margin-bottom: 18em;
+}
+.slick-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    width: 30em;
+    margin-left: 6em;
 }
 @media screen and (max-width: 799px) {
     .quote-caro {
@@ -456,4 +517,19 @@ h3 {
 }
 h3 {
     color: black;
+}
+// .umbrella {
+//     clip-path: inset(0px 0px 2000px 0px);
+//     background-attachment: fixed;
+//     margin-bottom: -140em;
+// }
+
+.donate-now {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10em;
+}
+.coming-soon {
+    color: red;
+    font-size: 30px;
+    text-align: center;
 }

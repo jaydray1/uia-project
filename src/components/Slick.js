@@ -1,8 +1,25 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+// import axios from 'axios';
 
 class CaroBar extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     facts: []
+  //   };
+  // }
+
+  // componentDidMount() {
+  //   axios.get('/api/facts')
+  //   .then(res => {
+  //     const quotes = res.data.map(item => item.data);
+  //     this.setState({facts:quotes});
+  //   }).catch(err=>console.log(err))
+  // }
+  
   render() {
+// console.log(this.state.quotes)
     var settings = {
       dots: true,
       infinite: true,
@@ -16,17 +33,40 @@ class CaroBar extends Component {
     return (
       <div className="quote-caro">
         <Slider {...settings}>
-          <div><h3>“United in Aging Inc. is a nonprofit designed 
-          to create safe spaces for LGBTQIA older adults. Our 
-          mission is to provide consulting, educational information, 
-          and tools to long term care facilities, such as nursing 
-          homes and assisted living centers, to help foster a culture 
-          of awareness and inclusion.”</h3></div>
-          <div><h3>#2</h3></div>
-          <div><h3>#3</h3></div>
+
+          <div className="slick-header">
+            <span><i className="fa fa-quote-left fa-4x" aria-hidden="true"></i></span>
+            <br/>
+            <br/>
+            <br/>
+            <div className="slick-content">
+            LGBT older adults do not access aging services out of fear of harassment or disapproval.</div></div>
+
+            <div className="slick-header">
+            <span><i className="fa fa-quote-left fa-4x" aria-hidden="true"></i></span>
+            <br/>
+            <br/>
+            <br/>
+          <div className="slick-content">
+            Only 22% of LGBT seniors felt comfortable being open about their sexual identity ( 2011 report in the National Resource Center on LGBT Aging).</div></div>
+
+          <div className="slick-header">
+          <span><i className="fa fa-quote-left fa-4x" aria-hidden="true"></i></span>
+            <br/>
+            <br/>
+            <br/>
+          <div className="slick-content">LGBT older adult population is expected to double by 2030.</div></div>
+
+          <div className="slick-header">
+          <span><i className="fa fa-quote-left fa-4x" aria-hidden="true"></i></span>
+            <br/>
+            <br/>
+            <br/>
+          <div className="slick-content">Although 80% of long-term care in the U.S. is provided by family members, LGBT elders are 2x as likely to be single and 4x more likely to be without children than their heterosexual counterparts.</div></div>
         </Slider>
       </div>
     );
   }
 }
 export default CaroBar;
+            

@@ -11,7 +11,7 @@ import terrell from '../img/terrelledit6.png';
 import julia from '../img/whiteedit2.png';
 import logo from '../img/logononame.png';
 
-const About = _ => {
+const RobView = _ => {
 
     return (
         <div>
@@ -31,6 +31,21 @@ const About = _ => {
 
 <div className="card-wrapper">
 
+     <div className="about-about-rob"><img src={Rob} alt="Rob Versaw" className="img-card" /></div> 
+        <div className="card">
+                <div className="holder">
+                    <h1>Rob Versaw</h1>
+                    <p className="title">Operations</p>
+                    <p>Duke University, MBA</p>
+                    <p>As an active member of the LGBTQIA community, and having 
+                    spent time in parts of the country less welcoming to those from 
+                    different background, Rob is passionate about United in Aging’s 
+                    mission to aid older adults. With a strong background in product 
+                    and project management, Rob’s role w</p>
+                    <a href="https://www.linkedin.com/in/rob-versaw"><i className="fa fa-linkedin"></i></a>
+                </div>
+        </div>
+        
     <div className="about-about-image"><img src={julia} alt="Julia White" className="img-card" /></div>
         <div className="card">
             <div className="holder">
@@ -71,20 +86,6 @@ const About = _ => {
                     </div>
             </div>
         
-     <div className="about-about-rob"><img src={Rob} alt="Rob Versaw" className="img-card" /></div> 
-        <div className="card">
-                <div className="holder">
-                    <h1>Rob Versaw</h1>
-                    <p className="title">Operations</p>
-                    <p>Duke University, MBA</p>
-                    <p>As an active member of the LGBTQIA community, and having 
-                    spent time in parts of the country less welcoming to those from 
-                    different background, Rob is passionate about United in Aging’s 
-                    mission to aid older adults. With a strong background in product 
-                    and project management, Rob’s role w</p>
-                    <a href="https://www.linkedin.com/in/rob-versaw"><i className="fa fa-linkedin"></i></a>
-                </div>
-        </div>
      
      <div className="about-about-kate"><img src={kate} alt="Kate Drinkwater" className="img-card" /></div> 
 

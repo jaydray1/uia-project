@@ -11,16 +11,16 @@ const Navbar = _ => {
             <div className="nav-header"> 
                 <ul>
                     <Link className="linkage" to="/">
-                    <li className="link-nav">Home</li>
+                    <li className="link-nav">HOME</li>
                     </Link>
                     <Link className="linkage" to="/about">
-                    <li className="link-nav">Meet Us</li>
+                    <li className="link-nav">MEET US</li>
                     </Link>
                     <Link className="linkage" to="/contact">
-                    <li className="link-nav">Contact</li>
+                    <li className="link-nav">CONTACT</li>
                     </Link>
                     <Link className="linkage" to="/donate">
-                    <li className="link-nav">Donate</li>
+                    <li className="link-nav">DONATE</li>
                     </Link>
                 </ul>
             </div>
