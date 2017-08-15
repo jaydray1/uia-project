@@ -37,7 +37,7 @@ const RobView = _ => {
                 <div className="holder">
                     <h1>Rob Versaw</h1>
                     <p className="title">Operations</p>
-                    <p>Duke University, MBA</p>
+                    <p>Duke University, MBA 2019</p>
                     <p>As an active member of the LGBTQIA community, and having 
                     spent time in parts of the country less welcoming to those from 
                     different background, Rob is passionate about United in Aging’s 
