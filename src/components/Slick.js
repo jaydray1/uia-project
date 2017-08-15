@@ -21,7 +21,7 @@ class CaroBar extends Component {
   render() {
 // console.log(this.state.quotes)
     var settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       // speed: 800,
       slidesToShow: 1,

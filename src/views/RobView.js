@@ -6,10 +6,11 @@ import Footer from '.././components/Footer.js';
 // import Hero from '.././components/Hero.js';
 import Navbar from '.././components/Navbar.js';
 import team from '../img/meetus.jpeg';
-import kate from '../img/kateedit2.png';
-import terrell from '../img/terrelledit6.png';
-import julia from '../img/whiteedit2.png';
-import logo from '../img/logononame.png';
+import kate from '../img/kateedit2.png'
+import terrell from '../img/terrelledit6.png'
+import julia from '../img/whiteedit2.png'
+import logo from '../img/logononame.png'
+
 
 const RobView = _ => {
 
@@ -31,7 +32,7 @@ const RobView = _ => {
 
 <div className="card-wrapper">
 
-     <div className="about-about-rob"><img src={Rob} alt="Rob Versaw" className="img-card" /></div> 
+     <div className="about-about-image"><img src={Rob} alt="Rob Versaw" className="img-card" /></div> 
         <div className="card">
                 <div className="holder">
                     <h1>Rob Versaw</h1>
@@ -46,7 +47,7 @@ const RobView = _ => {
                 </div>
         </div>
         
-    <div className="about-about-image"><img src={julia} alt="Julia White" className="img-card" /></div>
+    <div className="about-about-rob"><img src={julia} alt="Julia White" className="img-card" /></div>
         <div className="card">
             <div className="holder">
                 <h1>Julia White</h1>
@@ -128,4 +129,4 @@ const RobView = _ => {
     )
 }
 
-export default About
+export default RobView

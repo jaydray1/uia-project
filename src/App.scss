@@ -10,7 +10,7 @@ $gray: #FCFCFC;
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif:700i');
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400i');
 
 body {
@@ -41,6 +41,16 @@ p {
 //     background-size: cover;
 //     height: 50em;
 // }
+.mission-text {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+}
 .link-ham {
     padding: 1rem;
     border-top: 2px solid #F2F2F2;
@@ -175,7 +185,8 @@ fa-bars fa-2x {
     flex-direction: column;
     align-items: center;
     margin-top: 3em;
-    // margin-left: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .home-cards-main {
     display: flex;
@@ -215,8 +226,8 @@ fa-bars fa-2x {
 }
 
 @media screen and (min-width: 834px) {
-    .umbrella {
-        
+    .mission-text {
+        font-size: 30px;
     }
     #home-image {
         clip-path: inset(20px 0px 300px 0px);
@@ -308,7 +319,9 @@ fa-bars fa-2x {
     }
 }
 @media screen and (min-width: 1200px) {
-    
+    .quote {
+        display: none;
+    }
     #home-image {
         clip-path: inset(20px 0px 550px 0px);
         margin-bottom: -39.3em;
@@ -480,11 +493,7 @@ a {
     width: 30em;
     margin-left: 6em;
 }
-@media screen and (max-width: 799px) {
-    .quote-caro {
-        display: none;
-    }
-}
+
 h3 {
     text-align: center;
     width: 50%;
@@ -515,9 +524,7 @@ h3 {
 .sponsor-main {
     display: none;
 }
-h3 {
-    color: black;
-}
+
 // .umbrella {
 //     clip-path: inset(0px 0px 2000px 0px);
 //     background-attachment: fixed;
@@ -526,10 +533,39 @@ h3 {
 
 .donate-now {
     font-family: 'Quicksand', sans-serif;
-    font-size: 10em;
+    font-size: 50px;
 }
 .coming-soon {
     color: red;
     font-size: 30px;
     text-align: center;
+}
+.mission {
+    display: flex;
+    flex-direction: column;
+    height: 25em;
+    background-color: white;
+    margin-top: 3em;
+}
+.fa-quote-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
+}
+.fa-quote-left {
+    margin-left: 1em;
+}
+.quotes-containers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.quote {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
