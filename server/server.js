@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //*********Serves static build files to the front-end
-app.use(express.static(__dirname + "./../build"));
+app.use(express.static(__dirname + "./../build")); //what i have 
+
 
 //*********Massive allows you to create sql files to populate your DB with */
 massive(config.connectionString).then(dbInstance => app.set('db', dbInstance));
@@ -60,6 +61,10 @@ app.post('/api/payment', function(req, res, next){
   //   // The card has been declined
   // }
 });
+});
+
+app.all('/*', (req, res) => { // This is what you need.
+	res.sendFile('index.html', { root: __dirname + './../build' });
 });
 
 app.listen(config.port, () => {console.log(`Listening on port ${config.port}`); } );
