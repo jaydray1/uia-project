@@ -99,7 +99,6 @@ const About = _ => {
                 by offering her hair styling services to older adults in nursing homes. 
                 Being a servant and  advocate since day one, Kate will manage the social 
                 media marketing and branding for United in Aging Inc. </p>
-                {/* <a href="https://www.linkedin.com/in/rob-versaw"><i className="fa fa-linkedin"></i></a> */}
             </div>
         </div>
 
