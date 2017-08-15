@@ -8,7 +8,7 @@ const express = require('express')
     , getTeam = require('./controller/get_team.js')
     , getFacts = require('./controller/get_facts.js')
     , stripe = require('stripe')(config.secret_key)
-    , recaptcha = require('recaptcha')(config.recaptcha_secret)
+    // , recaptcha = require('recaptcha')(config.recaptcha_secret)
 
 app.use(bodyParser.json());
 app.use(cors());
