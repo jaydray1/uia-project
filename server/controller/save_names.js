@@ -12,6 +12,7 @@ module.exports = {
           , user.fundraise
           , user.stayInformed
           , user.successStories
+          , user.message
         ])
 
         .then( contacts => res.status(200).send('user added'))

@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
-import axios from 'axios';
-// import config from '../../config.js';
+import React, {Component} from 'react'
+import axios from 'axios'
 
 class ContactForm extends Component {
     constructor(props) {
@@ -13,7 +12,8 @@ class ContactForm extends Component {
             volunteer: false,
             fundraise: false,
             stayInformed: false,
-            successStories: false
+            successStories: false,
+            messsage: ''
 
         };
 
@@ -41,7 +41,8 @@ class ContactForm extends Component {
           , volunteer: this.state.volunteer
           , fundraise: this.state.fundraise
           , stayInformed: this.state.stayInformed
-          , successStories: this.state.successStories 
+          , successStories: this.state.successStories
+          , message: this.state.message
          })
         
         .then( (response) => console.log('updated!'))
@@ -68,7 +69,7 @@ class ContactForm extends Component {
                    
 
                     
-                        <label for="firstname">Last Name</label>
+                        <label for="lastname">Last Name</label>
                             <input
                             type="text"
                             className="form-control"
@@ -78,14 +79,21 @@ class ContactForm extends Component {
                    
                     
                     
-                        <label for="firstname">Email</label>
+                        <label for="email">Email</label>
                             <input 
                             className="form-control"
                             name="email"
-                            type="text"
+                            type="email"
                             value={this.state.email}
                             onChange={this.handleInputChange} />
                     
+                            <label for="message">Message</label>
+                            <textarea 
+                            className="form-control"
+                            name="message"
+                            type="text"
+                            value={this.state.message}
+                            onChange={this.handleInputChange} />
                    
                         <h4>Subscription Options</h4>
 
@@ -136,8 +144,8 @@ class ContactForm extends Component {
                             Hear Success Stories
                             </label>
                         </div>
+                    <div className="g-recaptcha" data-sitekey="6Lfq1iwUAAAAAK7C2yghEAAtE_SNtnF04G-uoyKJ"></div>
                     <button type ="submit" value="Submit" className="btn-primary btn-large">Send</button>
-                    {/* <div class="g-recaptcha" data-sitekey="config.recaptcha_secret"></div> */}
                 </form> 
                 </div>
                 </div>

@@ -10,7 +10,7 @@ const Navdrop = _ => {
                     <li className="link-ham">Home</li>
                     </Link>
                     <Link className="linkage" to="/about">
-                    <li className="link-ham">About</li>
+                    <li className="link-ham">Meet Us</li>
                     </Link>
                     <Link className="linkage" to="/contact">
                     <li className="link-ham">Contact</li>

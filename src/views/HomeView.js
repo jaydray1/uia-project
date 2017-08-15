@@ -7,7 +7,7 @@ import grandma from '../img/twoguys.jpeg';
 import CaroBar from '.././components/Slick.js';
 import Sponsor from '.././components/Sponsors.js';
 import logo from '../img/logononame.png';
-import umbrella from '../img/umbrella.jpeg';
+import Quotes from '.././components/quotesColumns'
 
 
 const HomeView = _ => {
@@ -23,17 +23,24 @@ const HomeView = _ => {
 
         <div className="Hero-sub">
             <div className="Hero-sub-sub" id="home-hero-sub">
-                <h2>United In Aging</h2>
+                <h2>United In</h2>
                 <img src={logo} className="logo-name" alt="logo_with_name" height="70em" />
-                <h2>Home</h2>
+                <h2>Aging</h2>
         </div>
         </div> 
+        <div className="mission">
+            <div><i className="fa fa-quote-left fa-3x" aria-hidden="true"></i></div>
+            <div className="mission-text">
+            United in Aging Inc. Is a nonprofit designed to create safe spaces for LGBTQIA older adults. Our mission is to provide consulting, educational information, and tools to long term care facilities, such as nursing homes and assisted living centers, to help foster a culture of awareness and inclusion.
+            </div>
+            <div><i className="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
+        </div>
 
          
-            {/* <img src={umbrella} className="umbrella" alt="umbrellas" /> */}
         
          <HomeCards></HomeCards> 
           <CaroBar></CaroBar>  
+          <Quotes></Quotes>
         <p className="support-tag">United in Aging is Supported By</p>
         <Sponsor></Sponsor>
          <Footer></Footer> 

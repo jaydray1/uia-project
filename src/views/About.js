@@ -10,6 +10,8 @@ import kate from '../img/kateedit2.png';
 import terrell from '../img/terrelledit6.png';
 import julia from '../img/whiteedit2.png';
 import logo from '../img/logononame.png';
+// import Nuka from '.././components/Nuka.js';
+// import OwlCarousel from '.././components/Owl.js';
 
 const About = _ => {
 
@@ -76,7 +78,7 @@ const About = _ => {
                 <div className="holder">
                     <h1>Rob Versaw</h1>
                     <p className="title">Operations</p>
-                    <p>Duke University, MBA</p>
+                    <p>Duke University, MBA 2019</p>
                     <p>As an active member of the LGBTQIA community, and having 
                     spent time in parts of the country less welcoming to those from 
                     different background, Rob is passionate about United in Aging’s 
@@ -120,6 +122,8 @@ const About = _ => {
             </div>
         </div>
         </div>
+        {/* <OwlCarousel></OwlCarousel> */}
+        {/* <Nuka></Nuka> */}
        <Footer></Footer>
 
         </div>
