@@ -83,7 +83,7 @@ const About = _ => {
                     spent time in parts of the country less welcoming to those from 
                     different background, Rob is passionate about United in Aging’s 
                     mission to aid older adults. With a strong background in product 
-                    and project management, Rob’s role w</p>
+                    and project management, Rob’s role with the organization is to keep the proverbial trains running.</p>
                     <a href="https://www.linkedin.com/in/rob-versaw"><i className="fa fa-linkedin"></i></a>
                 </div>
         </div>
