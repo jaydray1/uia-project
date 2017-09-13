@@ -28,7 +28,7 @@ const Donate = _ => {
                 <div className="donate-now">
                     Donate Now
                 </div>
-                <p className="coming-soon">COMING SOON</p>
+                {/* <p className="coming-soon">COMING SOON</p> */}
             </div>
                 <StripeComp />
         </div>
