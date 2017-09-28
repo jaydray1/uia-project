@@ -9,7 +9,6 @@ import kate from '../img/kateedit2.png';
 import terrell from '../img/terrelledit6.png';
 import julia from '../img/whiteedit2.png';
 import logo from '../img/logononame.png';
-import MDSpinner from "react-md-spinner";
 
 
     
