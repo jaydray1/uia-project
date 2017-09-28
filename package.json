@@ -13,11 +13,16 @@
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
+    "react-emotion": "^7.3.2",
+    "react-md-spinner": "^0.2.5",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.10",
     "react-slick": "^0.14.11",
+    "react-spinkit": "^3.0.0",
+    "react-spinners": "^0.1.4",
     "react-stripe-checkout": "^2.4.0",
+    "recompose": "^0.25.1",
     "stripe": "^4.23.1"
   },
   "scripts": {

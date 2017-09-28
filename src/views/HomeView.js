@@ -41,7 +41,7 @@ const HomeView = _ => {
          <HomeCards></HomeCards> 
           <CaroBar></CaroBar>  
           <Quotes></Quotes>
-        <p className="support-tag">United in Aging is Supported By</p>
+        <p className="support-tag">UNITED IN AGEING IS SUPPORTED BY</p>
         <Sponsor></Sponsor>
          <Footer></Footer> 
         </div>
