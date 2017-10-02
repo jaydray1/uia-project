@@ -95,7 +95,7 @@ class ContactForm extends Component {
                             value={this.state.message}
                             onChange={this.handleInputChange} />
                    
-                        <h4>Subscription Options</h4>
+                        <h4>Contact Purpose</h4>
 
                         <div className="checkbox">
                             <label>
