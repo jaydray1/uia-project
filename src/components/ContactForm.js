@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+// var Spinner = require('react-spinkit');
 
 class ContactForm extends Component {
     constructor(props) {
@@ -13,14 +14,24 @@ class ContactForm extends Component {
             fundraise: false,
             stayInformed: false,
             successStories: false,
-            messsage: ''
+            messsage: '',
+            hidden: "hidden"
+
 
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
+    componentWillMount() {
+       var that = this;
+       setTimeout(function() {
+           that.show();
+       }, that.props.wait);
+    }
+    show() {
+        this.setState({hidden: ""})
+    }
     handleInputChange(event) {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -30,6 +41,7 @@ class ContactForm extends Component {
             [name]: value
         });
     }
+    
 
     handleSubmit(event) {
         event.preventDefault();
@@ -50,7 +62,11 @@ class ContactForm extends Component {
     }
 
     render() {
+
         return (
+            
+            <div className={this.state.hidden}>
+           
             <div className="main-contact">
                 <section className="main-contact">
                 <div id="contact">
@@ -150,6 +166,7 @@ class ContactForm extends Component {
                 </div>
                 </div>
                 </section>
+                </div>
             </div>
         );
     }
