@@ -17,10 +17,16 @@ class Bios extends Component {
         var that = this;
         setTimeout(function() {
             that.show();
-        }, that.props.wait);
+        }, that.props.wait)
+        setTimeout(function() {
+            that.hide();
+        }, that.props.done)
      }
      show() {
          this.setState({hidden: ""})
+     }
+     hide() {
+         this.setState({hidden: "Hidden"})
      }
 
      render() {

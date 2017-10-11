@@ -5,7 +5,8 @@ import Navbar from '.././components/Navbar.js';
 import team from '../img/meetus.jpeg';
 import logo from '../img/logononame.png';
 import Bios from '../components/bios';
-var Spinner = require('react-spinkit');
+// import SpinMe from '../components/SpinMe';
+
 
 
     
@@ -25,11 +26,10 @@ var Spinner = require('react-spinkit');
                     <h2>Meet Us</h2>
             </div>
             </div>
-                <div className="spinner">
-                    <Spinner name="ball-grid-pulse" color="blue"/>
-                </div>
+                {/* <SpinMe/> */}
                 <Bios 
-                wait={3000}
+                wait={1000}
+                done={3000}
                 />
             
     

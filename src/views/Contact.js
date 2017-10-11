@@ -6,7 +6,7 @@ import Footer from '.././components/Footer.js';
 import Navbar from '.././components/Navbar.js';
 import contactPic from '../img/contactpic.jpg';
 import logo from '../img/logononame.png';
-var Spinner = require('react-spinkit');
+// import SpinMe from '../components/SpinMe';
 
 const Contact = _ => {
     return (
@@ -25,11 +25,9 @@ const Contact = _ => {
         </div>
         </div> 
 
-            <div className="spinner">
-                <Spinner name="ball-grid-pulse" color="blue"/>
-             </div>
+            {/* <SpinMe/> */}
             <ContactForm 
-            wait={3000}
+            wait={1000}
             />
             <section id="contact-foot-main">
                 <div className="contact-foot">

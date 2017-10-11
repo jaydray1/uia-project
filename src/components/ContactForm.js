@@ -15,6 +15,7 @@ class ContactForm extends Component {
             stayInformed: false,
             successStories: false,
             messsage: '',
+            services: false,
             hidden: "hidden"
 
 
@@ -55,9 +56,19 @@ class ContactForm extends Component {
           , stayInformed: this.state.stayInformed
           , successStories: this.state.successStories
           , message: this.state.message
+          , services: this.state.services
          })
-        
-        .then( (response) => console.log('updated!'))
+        .then (this.setState({
+            firstName: ""
+            , lastName: ""
+            , email: ""
+            , volunteer: ""
+            , fundraise: ""
+            , stayInformed: ""
+            , successStories: ""
+            , message: ""
+            , services: ""
+        }))
         .catch( error => console.log(error));
     }
 
@@ -112,6 +123,18 @@ class ContactForm extends Component {
                             onChange={this.handleInputChange} />
                    
                         <h4>Contact Purpose</h4>
+
+                        <div className="checkbox">
+                            <label>
+                                <input 
+                                name="services"
+                                type="checkbox"
+                                checked={this.state.services}
+                                onChange={this.handleInputChange}
+                                  /> 
+                            Request Services
+                            </label>
+                        </div>
 
                         <div className="checkbox">
                             <label>
