@@ -79,7 +79,7 @@ class Bios extends Component {
                             <div className="holder">
                                 <h1>Rob Versaw</h1>
                                 <p className="title">Operations</p>
-                                <p>George Washington University Master of Science in Computer Systems Engineering, 2015</p>
+                                <p>George Washington University Master of Science in Computer Systems Engineering 2015</p>
                                 <p>As an active member of the LGBTQIA community, and having 
                                 spent time in parts of the country less welcoming to those from 
                                 different background, Rob is passionate about United in Aging’s 
